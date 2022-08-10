@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Website</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <h1 style="text-align: center;font-weight: 1000; font-size:55px;font-family: 'Merriweather', serif;">TAKE A NOTES</h1>
+        <nav class="navbar">
+            <ul>
+                <li href="#">HOME</li>
+                <li>CONTACT US</li>
+                <li>LOGIN</li>
+                <!-- <button onclick="document.getElementById('id01').style.display=block" >HOME</button>
+                <button>CONTACT US</button>
+                <button>LOGIN IN</BUTton> -->
+            </ul>
+            <div class="side">
+                <input type="search" name="search" id="searchtext" style="border-radius: 6px;">
+                <input type="button" value="Search" id="seabtn" style="border-radius: 6px; color: firebrick;">
+            </div>
+        </nav>
+    </header>
+    <br />
+    <div class="maincontent">
+        <textarea name="text" id="addtext" cols="70" rows="12" placeholder="  Write A Note"></textarea>
+        <br>
+
+        <input type="button" value="Add Note" class="btn" id="addbtn">
+    </div>
+    <hr />
+    <h2 style="text-align: center;font-weight: 1000; font-size:40px; font-family: 'Lobster', cursive;">YOUR NOTES</h2>
+    <hr />
+    <section id="notesSection"></section>
+
+
+
+
+
+
+
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 " style="max-width:10600px">
+      
+          <div class="w3-center"><br>
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+            <img src="img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+          </div>
+    
+          <form class="w3-container" action="/action_page.php">
+            <div class="w3-section">
+              <label><b>Username</b></label>
+              <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+              <label><b>Password</b></label>
+              <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+              <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+              <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+            </div>
+          </form>
+    
+          <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+            <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+            <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
